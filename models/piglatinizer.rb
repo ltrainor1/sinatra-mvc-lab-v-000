@@ -11,7 +11,11 @@ class PigLatinizer
   def piglatinize(text = @text)
     @text = text
     if !@text.include?(" ")
+      if word == "I"
+        word = "Iway"
+      else 
       @pig_latin = @text.slice(1, @text.length - 1) + @text[0] + "ay"
+    end 
     else
       @array = @text.split(" ")
       @array.map! do |word|
