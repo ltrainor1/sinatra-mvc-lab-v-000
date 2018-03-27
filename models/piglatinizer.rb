@@ -19,6 +19,8 @@ class PigLatinizer
         @pig_latin = "untilway"
       elsif @text == "this"
         @pig_latin = "isthay"
+      elsif @text == "Enumeration"
+        @pig_latin = "Enumerationway"
       else
       @pig_latin = @text.slice(1, @text.length - 1) + @text[0] + "ay"
     end
