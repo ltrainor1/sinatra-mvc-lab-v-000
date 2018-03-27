@@ -17,9 +17,9 @@ class PigLatinizer
       @array.map! do |word|
       if word[0].match(/[aeiouAEIOU]/)
         word = word + "lay"
-      else 
+      else
         word = word.slice(1, word.length - 1) + word[0] + "ay"
-      end 
+      end
       end
       @pig_latin = @array.join(" ")
 
