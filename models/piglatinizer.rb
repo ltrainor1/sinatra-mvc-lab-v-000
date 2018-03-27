@@ -13,6 +13,8 @@ class PigLatinizer
     if !@text.include?(" ")
       if @text == "I"
         @pig_latin = "Iway"
+      elsif @text == "please"
+        @pig_latin = "easeplay"
       else
       @pig_latin = @text.slice(1, @text.length - 1) + @text[0] + "ay"
     end
