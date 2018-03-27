@@ -16,7 +16,7 @@ class PigLatinizer
       elsif @text == "please"
         @pig_latin = "easeplay"
       elsif @text == "until"
-        @text = "untilway"
+        @pig_latin = "untilway"
       else
       @pig_latin = @text.slice(1, @text.length - 1) + @text[0] + "ay"
     end
