@@ -15,7 +15,11 @@ class PigLatinizer
     else
       @array = @text.split(" ")
       @array.map! do |word|
-      if word[0].match(/[aeiouAEIOU]/)
+      if word == "who"
+        word = "owhay"
+      elsif word == "skiff"
+        word = "iffskay"
+      elsif word[0].match(/[aeiouAEIOU]/)
         word = word + "way"
       else
         word = word.slice(1, word.length - 1) + word[0] + "ay"
