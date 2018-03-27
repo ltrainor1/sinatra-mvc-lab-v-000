@@ -13,9 +13,9 @@ class PigLatinizer
     if !@text.include?(" ")
       if word == "I"
         word = "Iway"
-      else 
+      else
       @pig_latin = @text.slice(1, @text.length - 1) + @text[0] + "ay"
-    end 
+    end
     else
       @array = @text.split(" ")
       @array.map! do |word|
