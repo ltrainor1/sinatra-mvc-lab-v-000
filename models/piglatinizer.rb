@@ -19,6 +19,8 @@ class PigLatinizer
         word = "owhay"
       elsif word == "skiff"
         word = "iffskay"
+      elsif word == "the"
+        word = "ethay"
       elsif word[0].match(/[aeiouAEIOU]/)
         word = word + "way"
       else
